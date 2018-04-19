@@ -1,0 +1,99 @@
+@import _variables_y_otros
+
+$color_contenido: #0074D9 
+$fuente_logos: 'Tahoma'
+$color_menu: #001f3f
+
+body
+	background: #7FDBFF
+	padding: 0
+	margin: 0
+
+.content
+	padding: 0 1rem
+	margin: 1rem
+
+#cabeza
+	//border-radius: 5px
+	+radio-borde-contenedor(5px)
+	width: 100%
+	background-color: $color_contenido
+	margin-left: auto
+	margin-right: auto
+
+#menu
+	padding: 2%
+	list-style-type: none
+	overflow: hidden
+	//li
+	li
+		float: left
+		margin-left: 50px
+		padding: 2px
+		border-radius: 5px
+		background-color: rgba($color_menu, .5)
+		cursor: pointer
+		&:hover
+				background-color: #39CCCC
+		//span
+		span
+			padding: 3px
+			color: white
+			font-weight: bold
+			font-family: 'Roboto', serif
+			&:hover
+				color: #001f3f
+
+#contenido
+	//border-radius: 5px
+	+radio-borde-contenedor(5px)
+	width: 100%
+	background-color: $color_contenido
+	margin-left: auto
+	margin-right: auto
+
+.texto_cont
+	margin: 10px
+	font-style: italic
+	color: white
+	font-weight: bold
+	font-family: 'Calibri'
+
+#pie_pagina
+	//border-radius: 5px
+	+radio-borde-contenedor(5px)
+	width: 100%
+	background-color: white
+	text-align: center
+
+#fecha_actual
+	padding: 0
+
+#fb_logo
+	color: #2F4193
+	font-family: 'Tahoma'
+	font-weight: bold
+	display: inline-flex
+	margin: 10px
+	padding: 0
+	margin-right: 55px
+	cursor: pointer
+
+#tw_logo
+	color: #37C1E3
+	font-family: 'Tahoma'
+	font-weight: bold
+	display: inline-flex
+	margin: 10px
+	padding: 0
+	margin-right: 55px
+	cursor: pointer
+
+#ig_logo
+	color: #E13B1E
+	font-family: 'Tahoma'
+	font-weight: bold
+	display: inline-flex
+	margin: 10px
+	padding: 0
+	cursor: pointer
